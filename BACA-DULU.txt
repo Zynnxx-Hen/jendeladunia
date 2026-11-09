@@ -1,0 +1,13 @@
+CARA PASANG DI NETLIFY (agar suka, komentar, dan AI jalan untuk semua pembaca)
+
+1. Upload folder ini ke GitHub, lalu di Netlify: Add new site > Import from Git. Pengaturan build sudah ada di netlify.toml.
+   (Drag & drop biasa hanya menaruh halaman statis dan TIDAK menjalankan fungsi server.)
+   Alternatif tanpa GitHub: npm install lalu npm i -g netlify-cli lalu netlify deploy --prod
+
+2. Suka & komentar: langsung jalan setelah deploy (disimpan di Netlify Blobs).
+
+3. AI ViMay asli: di Netlify buka Site configuration > Environment variables, tambah
+   ANTHROPIC_API_KEY = kunci API Anthropic kamu (opsional: CLAUDE_MODEL).
+   Tanpa kunci, ViMay tetap menjawab dari isi artikel memakai mesin bawaan.
+
+Catatan: tanpa fungsi server, halaman tetap jalan; suka & komentar hanya tersimpan di perangkat masing-masing.
